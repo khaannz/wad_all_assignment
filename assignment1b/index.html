@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Data</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="validation.js"></script>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+
+<body>
+<form>
+  <div class="container">
+  <center>  <h1> Registeration Form</h1> </center>
+  <hr>
+  <label> Firstname </label> 
+<input type="text" id="fname" placeholder= "Firstname" size="15" required /> 
+
+<label> Lastname: </label>  
+<input type="text" id="lname" placeholder="Lastname" size="15"required /> 
+<div>
+<label> 
+Course :
+</label> 
+
+<select id="course">
+<option value="Course">Course</option>
+<option value="IT">IT</option>
+<option value="CS">CS</option>
+<option value="Mech">Mech</option>
+<option value="Civil">Civil</option>
+<option value="ENTC">ENTC</option>
+<option value="Auto">Auto</option>
+</select>
+</div>
+<div>
+<label> 
+Gender :
+</label><br>
+<input type="radio" value="Male" id="gender"> Male 
+<input type="radio" value="Female" id="gender"> Female 
+<input type="radio" value="Other" id="gender"> Other
+
+</div>
+<label> 
+Phone :
+</label>
+<input type="text" id="phone" placeholder="phone no." size="10" required> 
+Current Address :
+<textarea id="add" cols="80" rows="5" placeholder="Current Address" value="address" required>
+</textarea>  
+<label for="email"><b>Email</b></label>  
+<input type="text" placeholder="Enter Email" id="email" required pattern="^[a-zA-Z0-9+_.-]+@[a-zA-z0-9.-]=$">  
+ 
+   <button type="button" class="registerbtn" id="sub-btn">Register</button>    
+</form>  
+</body>  
+</html>  

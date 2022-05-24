@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+<style>
+    .font-li{
+        font-size: 25pt;
+        font-family: 'Times New Roman', Times, serif;
+    }
+</style>
+
+</head>
+<body>
+    <div data-role="page" id="page1">
+        <div data-role="header">
+            <h1> Travel</h1>
+        </div>
+        <div data-role="content">
+            
+            <h2> Select Package </h2>
+           <p>
+               <ul>
+                   <li class="font-li">
+                       Ladakh
+                   </li>
+                   
+                       <img src="./img/ladakh.jpg">
+                   
+                   <li>
+                       Duration 7 Days
+                    </li>
+                    <li>
+                        Price - 25000Rs
+                     </li>
+               </ul>
+           </p>
+           <p>
+               <a href="#dailogbox" dat-rel="dailog" data-role="button" data-transition="flip" style="width: 350px;">Book now </a>
+           </p>
+        </div>
+        <div data-role="footer">
+            <h3>@copyright @itsAP.com</h3></div>
+    </div>
+
+
+    <div dat-role="page" id="dailogbox" data-dailog="true">
+    <div data-role="header">
+        <h1> Confirm Buy?</h1>
+    </div>
+    <div data-role="content">
+        <p> select date</p>
+    
+        <h3> Are you sure to buy this book?</h3>
+        <a href="lform.html" data-role="button"> Yes</a>
+        <a href="index.html" data-role="button"> No</a>
+    </div>
+</div>
+</body>
+</html>
